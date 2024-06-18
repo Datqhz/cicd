@@ -14,7 +14,7 @@ RewriteRule . /cicd/index.php [L]
 # END WordPress
 # BEGIN Simply Static
 # Các nội dung nằm giữa "BEGIN Simply Static" và "END Simply Static" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
-<Files "C:\xampp\htdocs\cicd/wp-content/uploads\simply-static\29ead7f05595c062ce64bb8edbc520c7-debug.txt">
+<Files "C:\xampp\htdocs\cicd/wp-content/uploads\simply-static\48c60b53550520a4274fba3783364640-debug.txt">
 require all denied
 require host localhost
 </Files>
