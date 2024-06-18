@@ -1,0 +1,21 @@
+
+# BEGIN WordPress
+# Các nội dung nằm giữa "BEGIN WordPress" và "END WordPress" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /cicd/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /cicd/index.php [L]
+</IfModule>
+
+# END WordPress
+# BEGIN Simply Static
+# Các nội dung nằm giữa "BEGIN Simply Static" và "END Simply Static" được tạo ra tự động, và chỉ nên được thay đổi thông qua các filter của WordPress. Mọi thay đổi tới thành phần này có thể sẽ bị mất và ghi đè.
+<Files "C:\xampp\htdocs\cicd/wp-content/uploads\simply-static\29ead7f05595c062ce64bb8edbc520c7-debug.txt">
+require all denied
+require host localhost
+</Files>
+# END Simply Static
